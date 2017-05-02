@@ -151,7 +151,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #92278f;
+    color: #662d91;
     transition: all .3s ease;
 }
 
@@ -369,7 +369,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #92278f;
+    color: #662d91;
     transition: all .3s ease;
 }
 
