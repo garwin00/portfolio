@@ -38,6 +38,11 @@ body {
     font-family: 'Roboto';
     src: url('https://fonts.googleapis.com/css?family=Roboto');
 }
+
+@font-face {
+    font-family: 'fontawesome';
+    src: url('../fonts/fontawesome-webfont.ttf');
+}
 h1,
 h2,
 h3{
