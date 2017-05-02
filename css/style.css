@@ -1,0 +1,420 @@
+/* Page Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+
+/* Initial Container Style */
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin: auto;
+    width: 85%;
+    max-width: 800px;
+    line-height: 1.8em;
+    height: 110vh;
+}
+
+.content {
+    height: 100vh;
+    padding: 15vh 0;
+}
+
+/* Typography */
+
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/Gotham-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+h1,
+h2,
+h3{
+    font-family: 'gotham', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.236em;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.618em;
+    text-align: center;
+    margin: .5em auto;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.618em;
+    text-align: center;
+    margin: 1em 0;
+    color: #fff;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+strong {
+    font-size: 1.05em;
+}
+
+
+.landing_content h1 {
+    letter-spacing: 3pt; 
+    margin-top: 1em;
+    color: #fff;
+}
+
+.landing_p {
+    margin-top: 1.2em;
+    color: #fff;
+    font-family: 'gotham', sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+/* Landing Section */
+
+#landing {
+    height: 100vh;
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+}
+
+.landing_content {
+    top: 30%;
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.landing_content img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 1em auto;
+    display: block;
+}
+
+/* navigation */
+
+nav {
+    background-color: #414042;
+    z-index: 999;
+}
+
+nav,
+.nav_wrapper {
+    height: 80px;
+}
+
+nav ul {
+    margin: 32px 1.75em 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: .5em;
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'gotham', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #92278f;
+    transition: all .3s ease;
+}
+
+.branding {
+    margin: 15px 1.75em;
+    height: 50px;
+    width: 50px;
+}
+
+.branding:hover {
+    transform: rotate(180deg);
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* about section */
+
+#about {
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+}
+
+
+.intro {
+    font-size: 1.618em;
+    margin: .5em 0 1em 0;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#about h2, h3, p {
+    color: #fff;
+}
+
+#about p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.me {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #fff;
+}
+
+
+
+button {
+    height: 50px;
+    width: 250px;
+    border: 2px solid #fff;
+    background: none;
+    border-radius: 3px;
+    display: block;
+    margin: 2em auto 1em auto;
+    cursor: pointer;
+}
+
+button p {
+    font-family: 'gotham', sans-serif !important;
+    color: #fff;
+    text-transform: uppercase;
+    top: 0;
+}
+button:hover {
+    background-color: #fff;
+    transition: all .2s ease-in;
+    box-shadow: 0px 5px 15px 0px rgba(65,64,66,0.5);
+}
+
+button:hover p {
+    color: #662d91 !important;
+}
+
+
+button a {
+    text-decoration:  none !important;
+}
+
+
+/*portfolio*/
+
+.gallery {
+    height: 100vh;
+    max-width: 100%;
+    background-color: #414042;
+}
+
+#one, #two, #three {
+    height: 100%;
+    width: 33.33%;
+    float: left;
+    display: flex;
+
+}
+
+.overlay {
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
+}
+.overlay p {
+    position: relative;
+    font-family: 'gotham', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    top: 55%;
+}
+
+#one {
+    background-image: url("../img/branding.jpg");
+    background-size: cover;
+}
+
+#two {
+    background-image: url("../img/poster.jpg");
+    background-size: cover;
+}
+
+#three {
+    background-image: url("../img/app.jpg");
+    background-size: cover;
+}
+
+#one:hover .overlay {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+#two:hover .overlay {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+#three:hover .overlay {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+/*^^^referencing all of these at once didn't work, not sure why*/
+
+/*Contact */
+
+#contact {
+    background-image: url(../img/contactbckg.jpg);
+    background-size: cover;
+}
+
+
+#contact .content {
+    display: block;
+    height: 40vh;
+    padding: 30vh 0 0 0;
+}
+
+
+.contactlink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactlink:hover {
+    color: #92278f;
+    transition: all .2s ease;
+    cursor: pointer;
+    
+}
+
+.contact_details {
+    text-align: center;
+    margin: 1em 0;
+}
+
+#contact i {
+    padding: 0 .5em 0 0;
+}
+
+.icons img {
+    margin: 1em .3em;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    -webkit-transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    height: 30vh;
+    background-color:#414042; 
+}
+
+footer p {
+    font-family: 'gotham', sans-serif;
+    font-size: .618em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #92278f;
+    transition: all .3s ease;
+}
+
+.footer_content {
+    position: relative;
+    top: 45%;
+}
+
+.vismarque {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 1em;
+}
+
+.vismarque:hover {
+    transform: scale(1.25);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+@media (max-width:55em) {
+    #about {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 35em) {
+    .landing_content h1 {
+        font-size: 2.618em;
+    }
+    .landing_content p {
+        font-size: 14px;
+        line-height: 1.2em;
+    }
+    .branding {
+        display: none;
+    }
+    nav ul li {
+        text-align: center;
+
+    }
+    
+   #about {
+       height:140vh;
+       
+    }
+    .vismarque {
+        display: none;
+    }
+}

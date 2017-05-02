@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="img/favicon.png" rel="icon" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <title>Garry Irwin</title>
+</head>
+
+<body>
+    <section id="landing">
+        <div class="landing_content">
+            <img src="img/monogramlrg.png">
+            <h1>Hi, I'm Garry</h1>
+            <p class="landing_p">Front end designer, typography enthusiast and amateur beard grower.</p>
+        </div>
+    </section>
+
+    <div class="nav_wrapper">
+        <nav class="nav">
+            <a data-scroll href="#landing"><img class="branding" src="img/monogramsm.png" /></a>
+            <ul>
+                <li><a data-scroll href="#about">ABOUT</a></li>
+                <li><a data-scroll href="#portfolio">PORTFOLIO</a></li>
+                <li><a data-scroll href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="content">
+                <img src="img/me.jpg" class="me" />
+                <h2>That's me <i class="fa fa-arrow-up" aria-hidden="true"></i></h2>
+                <h3>I'm a Front-End Designer from Belfast, Northern Ireland.</h3>
+                <p>I really love making <strong>clean, bespoke websites</strong> with little <strong>fun, personal touches.</strong> I'm a fan of clean typography paired with bold colours and imagery. I'm also quite partial to puns but that's a story for another time. I'm sure by now you're wondering what I can do for you? I'm specialised in <strong>HTML, CSS</strong> and <strong>Javascript / jQuery</strong>. I've also  dabbled in some <strong>Graphic Design, Photography</strong> and a little <strong>Music Production </strong>from time to time.</p>
+                <button>
+                <a data-scroll href="#contact">
+                    <p>let's work together!</p>                
+                </a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+           
+            <div class="gallery">
+                <div id="one">
+                <div class="overlay"><p>Personal Branding</p></div>
+                </div>
+                <div id="two">
+                <div class="overlay"><p>Type Specimen Posters</p>
+                </div>
+                </div>
+                <div id="three">
+                <div class="overlay"><p>App Design</p></div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+           <div class="content">
+               <h3>I'm always looking for new projects</h3><h3>Let's make cool stuff together</h3>
+
+            <p class="centered">Or maybe you just want to talk. I'm down for whatever.</p>
+            
+            <div class="contact_details">
+                           <div class="icons">
+                <a href="https://twitter.com/garwin00_" target="_blank"><img src="img/social/twitter.png" height="44px" width="44px"></a>
+                <a href="http://garwin00.tumblr.com/" target="_blank"><img src="img/social/tumblr.png" height="44px" width="44px"></a>
+                <a href="https://uk.pinterest.com/garwin00/" target="_blank"><img src="img/social/pinterest.png" height="44px" width="44px"></a>
+                <a href="https://github.com/garwin00" target="_blank"><img src="img/social/github.png" height="44px" width="44px"></a>
+
+            </div>
+                <p>
+                   <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:garry.irwin92@gmail.com" class="contactlink">garry.irwin92@gmail.com</a></p>
+                    <p><i class="fa fa-mobile" aria-hidden="true"></i>07511801170</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer_content">
+            <p>words and code by Garry Irwin<br>built for<a href="http://ixdbelfast.org" target="_blank"> #ixdbelfast</a></p>
+               <a data-scroll href="#about">
+                <img src="img/vismarque.png" class="vismarque">
+                </a> 
+        </div>
+    </footer>
+
+
+    <script>
+        var fixmeTop = $('.nav').offset().top;
+        $(window).scroll(function() {
+            var currentScroll = $(window).scrollTop();
+            if (currentScroll >= fixmeTop) {
+                $('.nav').css({
+                    position: 'fixed',
+                    top: '0',
+                    left: '0',
+                    width: '100%',
+                });
+            } else {
+                $('.nav').css({
+                    position: 'static'
+                });
+            }
+        });
+    </script>
+
+    <script>
+        smoothScroll.init();
+    </script>
+
+</body>
+</html>
