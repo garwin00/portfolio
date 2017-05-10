@@ -27,6 +27,7 @@ body {
     padding: 15vh 0;
 }
 
+
 /* Typography */
 
 @font-face {
@@ -43,9 +44,10 @@ body {
     font-family: 'fontawesome';
     src: url('../fonts/fontawesome-webfont.ttf');
 }
+
 h1,
 h2,
-h3{
+h3 {
     font-family: 'gotham', sans-serif;
 }
 
@@ -80,9 +82,8 @@ strong {
     font-size: 1.05em;
 }
 
-
 .landing_content h1 {
-    letter-spacing: 3pt; 
+    letter-spacing: 3pt;
     margin-top: 1em;
     color: #fff;
 }
@@ -96,6 +97,8 @@ strong {
 .centered {
     text-align: center;
 }
+
+
 /* Landing Section */
 
 #landing {
@@ -111,13 +114,13 @@ strong {
     text-align: center;
 }
 
-
 .landing_content img {
     height: 200px;
     width: 200px;
     margin: 0 auto 1em auto;
     display: block;
 }
+
 
 /* navigation */
 
@@ -174,7 +177,6 @@ nav ul li a:hover {
     background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
 }
 
-
 .intro {
     font-size: 1.618em;
     margin: .5em 0 1em 0;
@@ -182,14 +184,15 @@ nav ul li a:hover {
     line-height: 1.5em;
 }
 
-#about h2, h3, p {
+#about h2,
+h3,
+p {
     color: #fff;
 }
 
 #about p {
     font-family: 'Roboto', sans-serif;
 }
-
 
 .me {
     height: 200px;
@@ -199,8 +202,6 @@ nav ul li a:hover {
     margin: 0 auto;
     border: 2px solid #fff;
 }
-
-
 
 button {
     height: 50px;
@@ -218,20 +219,21 @@ button p {
     color: #fff;
     text-transform: uppercase;
     top: 0;
+    line-height: 48px;
 }
+
 button:hover {
     background-color: #fff;
     transition: all .2s ease-in;
-    box-shadow: 0px 5px 15px 0px rgba(65,64,66,0.5);
+    box-shadow: 0px 5px 15px 0px rgba(65, 64, 66, 0.5);
 }
 
 button:hover p {
     color: #662d91 !important;
 }
 
-
 button a {
-    text-decoration:  none !important;
+    text-decoration: none !important;
 }
 
 
@@ -243,12 +245,13 @@ button a {
     background-color: #414042;
 }
 
-#one, #two, #three {
+#one,
+#two,
+#three {
     height: 100%;
     width: 33.33%;
     float: left;
     display: flex;
-
 }
 
 .overlay {
@@ -263,13 +266,17 @@ button a {
     overflow: hidden;
     background: linear-gradient(45deg, #662d91 0%, #92278f 100%);
 }
+
 .overlay p {
-    position: relative;
     font-family: 'gotham', sans-serif;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    top: 55%;
+    line-height: 100vh;
+}
+
+.overlay a {
+    text-decoration: none;
 }
 
 #one {
@@ -291,16 +298,20 @@ button a {
     opacity: 1;
     transition: all .3s ease-in;
 }
+
 #two:hover .overlay {
     opacity: 1;
     transition: all .3s ease-in;
 }
+
 #three:hover .overlay {
     opacity: 1;
     transition: all .3s ease-in;
 }
 
+
 /*^^^referencing all of these at once didn't work, not sure why*/
+
 
 /*Contact */
 
@@ -309,13 +320,11 @@ button a {
     background-size: cover;
 }
 
-
 #contact .content {
     display: block;
     height: 40vh;
     padding: 30vh 0 0 0;
 }
-
 
 .contactlink {
     text-decoration: none;
@@ -326,7 +335,6 @@ button a {
     color: #92278f;
     transition: all .2s ease;
     cursor: pointer;
-    
 }
 
 .contact_details {
@@ -353,7 +361,7 @@ button a {
 
 footer {
     height: 30vh;
-    background-color:#414042; 
+    background-color: #414042;
 }
 
 footer p {
@@ -412,12 +420,9 @@ footer a:hover {
     }
     nav ul li {
         text-align: center;
-
     }
-    
-   #about {
-       height:140vh;
-       
+    #about {
+        height: 140vh;
     }
     .vismarque {
         display: none;
